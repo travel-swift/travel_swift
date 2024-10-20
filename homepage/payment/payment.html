@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thanh Toán Dịch Vụ</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Chọn Phương Thức Thanh Toán</h1>
+        <div class="payment-methods">
+            <img src="./visa.png" alt="Visa" data-method="visa">
+            <img src="./mastercard.png" alt="MasterCard" data-method="mastercard">
+            <img src="./momo.png" alt="MoMo" data-method="momo">
+            <img src="./nganhang.png" alt="Ngân Hàng" data-method="bank">
+        </div>
+        <div class="selected-method hidden">
+            Phương thức thanh toán đã chọn: <span id="selected-method-text"></span>
+        </div>
+
+        <div class="order-info hidden">
+            <h2>Chi Tiết Hoá Đơn</h2>
+            <p>Mã Hoá Đơn: <span id="invoice-id">HD12345</span></p>
+            <p>Ngày Lập Hoá Đơn: <span id="invoice-date"></span></p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Dịch vụ</th>
+                        <th>Mô tả</th>
+                        <th>Đơn giá</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Dịch vụ A</td>
+                        <td>Mô tả chi tiết về Dịch vụ A</td>
+                        <td>500,000 VND</td>
+                    </tr>
+                    <tr>
+                        <td>Dịch vụ B</td>
+                        <td>Mô tả chi tiết về Dịch vụ B</td>
+                        <td>750,000 VND</td>
+                    </tr>
+                </tbody>
+            </table>
+            <p>Tổng giá trị dịch vụ: <span id="subtotal">1,250,000 VND</span></p>
+            <p>Thuế (10%): <span id="tax">125,000 VND</span></p>
+            <p>Giảm giá: <span id="discount">-50,000 VND</span></p>
+            <p><strong>Tổng Hoá Đơn: <span id="total-price">1,325,000 VND</span></strong></p>
+        </div>
+
+        <div class="payment-details hidden">
+            <h2>Nhập Thông Tin Thanh Toán</h2>
+            <form>
+                <div>
+                    <label for="name">Tên chủ thẻ</label>
+                    <input type="text" id="name" name="name" required placeholder="Nguyễn Văn A">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" required placeholder="example@email.com">
+                </div>
+                <div>
+                    <label for="phone">Số điện thoại</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="0123456789">
+                </div>
+                <div>
+                    <label for="card-number">Số thẻ</label>
+                    <input type="text" id="card-number" name="card-number" required placeholder="1234 5678 9012 3456">
+                </div>
+                <div>
+                    <label for="expiry-date">Ngày hết hạn</label>
+                    <input type="text" id="expiry-date" name="expiry-date" required placeholder="MM/YY">
+                </div>
+                <div>
+                    <label for="cvv">Mã CVV</label>
+                    <input type="text" id="cvv" name="cvv" required placeholder="123">
+                </div>
+                <button type="submit">Thanh Toán</button>
+            </form>
+        </div>
+
+        <div class="qr-code hidden">
+            <h2>Quét Mã Để Thanh Toán</h2>
+            <form>
+                <div>
+                    <label for="qr-name">Họ và tên</label>
+                    <input type="text" id="qr-name" name="qr-name" required placeholder="Nguyễn Văn A">
+                </div>
+                <div>
+                    <label for="qr-email">Email</label>
+                    <input type="email" id="qr-email" name="qr-email" required placeholder="example@email.com">
+                </div>
+                <div>
+                    <label for="qr-phone">Số điện thoại</label>
+                    <input type="tel" id="qr-phone" name="qr-phone" required placeholder="0123456789">
+                </div>
+            </form>
+        </div>
+
+        <div class="momo-info hidden">
+            <h2>Thông Tin Thanh Toán MoMo</h2>
+            <div class="info-row">
+                <span>Số tài khoản MoMo:</span>
+                <span id="momo-number">0123456789</span>
+            </div>
+            <div class="info-row">
+                <span>Tên tài khoản:</span>
+                <span>Travel Swift</span>
+            </div>
+            <div class="info-row">
+                <span>Số tiền cần thanh toán:</span>
+                <span id="momo-amount">1,325,000 VND</span>
+            </div>
+        </div>
+
+        <div class="bank-info hidden">
+            <h2>Thông Tin Thanh Toán Ngân Hàng</h2>
+            <div class="info-row">
+                <span>Số tài khoản:</span>
+                <span id="bank-number">9876543210</span>
+            </div>
+            <div class="info-row">
+                <span>Tên tài khoản:</span>
+                <span>Travel Swift</span>
+            </div>
+            <div class="info-row">
+                <span>Ngân hàng:</span>
+                <span>Vietcombank</span>
+            </div>
+            <div class="info-row">
+                <span>Số tiền cần thanh toán:</span>
+                <span id="bank-amount">1,325,000 VND</span>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

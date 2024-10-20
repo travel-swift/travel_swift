@@ -1,0 +1,178 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(117, 126, 209, 0.1);
+    max-width: 600px;
+    width: 100%;
+}
+h1, h2 {
+    color: #757ED1;
+    margin-bottom: 20px;
+}
+.payment-methods {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.payment-methods img {
+    width: 60px;
+    height: auto;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.payment-methods img:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px rgba(117, 126, 209, 0.2);
+    border-color: #757ED1;
+}
+.selected-method {
+    margin-top: 20px;
+    font-weight: bold;
+    text-align: center;
+    color: #757ED1;
+}
+.order-info, .payment-details, .qr-code {
+    margin-top: 30px;
+}
+.order-info p, .payment-details div {
+    margin-bottom: 15px;
+}
+.payment-details form, .qr-code form {
+    margin-bottom: 20px;
+}
+.payment-details label, .qr-code label {
+    display: block;
+    margin-bottom: 8px;
+    color: #555;
+    font-weight: 500;
+}
+.payment-details input, .qr-code input {
+    width: 100%;
+    padding: 12px;
+    box-sizing: border-box;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+    margin-bottom: 15px;
+}
+.payment-details input:focus, .qr-code input:focus {
+    outline: none;
+    border-color: #757ED1;
+}
+button {
+    background-color: #757ED1;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    width: 100%;
+    margin-top: 20px;
+}
+button:hover {
+    background-color: #5A64B8;
+}
+.hidden {
+    display: none;
+}
+.qr-code img {
+    max-width: 100%;
+    height: auto;
+}
+.order-info table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+.order-info th, .order-info td {
+    border: 1px solid #e0e0e0;
+    padding: 12px;
+    text-align: left;
+}
+.order-info th {
+    background-color: #F0F2FF;
+    font-weight: bold;
+    color: #757ED1;
+}
+.order-info tr:nth-child(even) {
+    background-color: #FAFBFF;
+}
+.hidden {
+    display: none;
+}
+
+.info-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.copy-container {
+    display: flex;
+    align-items: center;
+}
+
+.copy-btn {
+    margin-left: 10px;
+    padding: 8px 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.copy-btn:hover {
+    background-color: #45a049;
+    transform: scale(1.05);
+}
+
+.copy-btn:active {
+    transform: scale(0.95);
+}
+
+.momo-info, .bank-info {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.momo-info h2, .bank-info h2 {
+    color: #333;
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.info-row span {
+    font-size: 16px;
+    color: #555;
+}
+
+#momo-number, #momo-amount, #bank-number, #bank-amount {
+    font-weight: bold;
+    color: #333;
+}

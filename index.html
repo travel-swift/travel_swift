@@ -1,0 +1,1016 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- 
+    - primary meta tags
+  -->
+  <title>Travel Swift</title>
+  <meta name="title" content="Adex">
+  <meta name="description" content="This is a business agency html template made by codewithsadee">
+
+  <!-- 
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml">
+
+  <!-- 
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet">
+
+  <!-- 
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!-- 
+    - preload images
+  -->
+  <link rel="preload" as="image" href="./assets/images/hero-bg.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-1.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-2.jpg">
+  <link rel="preload" as="image" href="./assets/images/hero-slide-3.jpg">
+
+</head>
+
+<body>
+
+  <!-- 
+    - #HEADER
+  -->
+
+  <header class="header" data-header>
+    <div class="container">
+
+      <a href="#" class="logo" style="display: inline-block; width: 74px; height: 24px; line-height: 24px; text-align: center;">
+        <span style="color: white; display: inline-block; width: 150px; font-family: 'Manrope', sans-serif; font-weight: 500; font-size: 2rem;">Travel Swift</span>
+      </a>
+
+      <nav class="navbar" data-navbar>
+
+        <div class="navbar-top">
+          <a href="#" class="logo">
+            <img src="./assets/images/logo-light.svg" width="74" height="24" alt="Adex home">
+          </a>
+
+          <button class="nav-close-btn" aria-label="close menu" data-nav-toggler>
+            <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+          </button>
+        </div>
+
+        <ul class="navbar-list">
+
+          <li>
+            <a href="#" class="navbar-link">Trang chủ</a>
+          </li>
+          
+            <li>
+            <a href="#history" class="navbar-link">Thông tin</a>
+            </li>
+          
+            <li>
+              <a href="./homepage/hotel/hotel.html" class="navbar-link" target="_blank">Khách sạn</a>
+            </li>
+          
+          <li>
+            <a href="./homepage/restaurant/nhahang.html" class="navbar-link" target="_blank">Nhà hàng</a>
+          </li>
+          
+          <li>
+            <a href="./homepage/health/health.html" class="navbar-link" target="_blank">Sức khoẻ</a>
+          </li>
+          
+          <li>
+            <a href="./homepage/insurance/insurance.html" class="navbar-link" target="_blank">Bảo hiểm</a>
+          </li>
+
+        </ul>
+
+        <div class="wrapper">
+          <a href="mailto:info@email.com" class="contact-link">info@email.com</a>
+
+          <a href="tel:0123456789" class="contact-link">0123456789</a>
+        </div>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-dribbble"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </nav>
+
+      <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+        <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+      </button>
+
+      <div class="overlay" data-nav-toggler data-overlay></div>
+
+    </div>
+  </header>
+
+
+
+
+
+  <main>
+    <article>
+
+      <!-- 
+        - #HERO
+      -->
+
+      <section class="section hero has-bg-image" aria-label="home"
+        style="background-image: url('./assets/images/hero-bg.jpg')">
+        <div class="container">
+
+          <div class="hero-content">
+
+            <h1 class="h1 hero-title">Travel Swift mang đến những trải nghiệm hoàn hảo - nhanh chóng - tiện lợi.</h1>
+
+            <p class="hero-text">
+              Chúng tôi cung cấp dịch vụ du lịch kết hợp tiện ích. Bao gồm vé máy bay, khách sạn và tour trọn gói.
+            </p>
+
+            <div class="btn-wrapper">
+
+              <a href="#" class="btn btn-primary">Tìm hiểu</a>
+
+              <a href="#" class="btn btn-outline">Liên lạc</a>
+
+            </div>
+
+          </div>
+
+          <div class="hero-slider" data-slider>
+
+            <div class="slider-inner">
+              <ul class="slider-container" data-slider-container>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/image.png" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li>
+<!-- 
+                <li class="slider-item">
+
+                  <div class="hero-card">
+                    <figure class="img-holder" style="--width: 575; --height: 550;">
+                      <img src="./assets/images/hero-slide-2.jpg" width="575" height="550" alt="hero banner"
+                        class="img-cover">
+                    </figure>
+
+                    <button class="play-btn" aria-label="play adex intro">
+                      <ion-icon name="play" aria-hidden="true"></ion-icon>
+                    </button>
+                  </div>
+
+                </li>
+
+                <li class="slider-item">
+
+                  <figure class="img-holder" style="--width: 575; --height: 550;">
+                    <img src="./assets/images/hero-slide-3.jpg" width="575" height="550" alt="" class="img-cover">
+                  </figure>
+
+                </li> -->
+              </ul>
+            </div>
+
+            <button class="slider-btn prev" aria-label="slide to previous" data-slider-prev>
+              <ion-icon name="arrow-back"></ion-icon>
+            </button>
+
+            <button class="slider-btn next" aria-label="slide to next" data-slider-next>
+              <ion-icon name="arrow-forward"></ion-icon>
+            </button>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #SERVICE
+      -->
+
+      <section class="section service" aria-labelledby="service-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="service-label">Chúng tôi cung cấp gì?</p>
+
+          <h2 class="h2 section-title">
+            Dịch vụ của chúng tôi được thiết kế đặc biệt để đáp ứng mọi nhu cầu du lịch, ăn uống, chăm sóc sức khỏe của bạn.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="call-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Hỗ trợ 24/7</h3>
+
+                <p class="card-text">
+                  Chúng tôi luôn sẵn sàng hỗ trợ bạn mọi lúc mọi nơi. Đội ngũ của chúng tôi cam kết mang đến trải nghiệm du lịch suôn sẻ và nhanh chóng khi bạn cần.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Learn More</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="shield-checkmark-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Thanh toán an toàn</h3>
+
+                <p class="card-text">
+                  Chúng tôi cung cấp hệ thống thanh toán bảo mật, giúp bạn yên tâm trong mọi giao dịch du lịch. Thông tin của bạn luôn được bảo vệ một cách tuyệt đối.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Tìm hiểu</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="cloud-download-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Cập nhật hằng ngày</h3>
+
+                <p class="card-text">
+                  Chúng tôi cung cấp thông tin du lịch mới nhất mỗi ngày, giúp bạn dễ dàng theo dõi và lên kế hoạch cho chuyến đi của mình một cách thuận tiện và chính xác.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Tìm hiểu</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+            <style>
+              .service-card {
+                height: 400px; /* Adjust the height as needed */
+              }
+            </style>
+
+            <li>
+              <div class="service-card">
+
+                <div class="card-icon">
+                  <ion-icon name="pie-chart-outline" aria-hidden="true"></ion-icon>
+                </div>
+
+                <h3 class="h4 card-title">Nghiên cứu thị trường</h3>
+
+                <p class="card-text">
+                  Chúng tôi cung cấp thông tin du lịch mới nhất mỗi ngày, giúp bạn dễ dàng theo dõi và lập kế hoạch cho chuyến đi, đảm bảo thuận tiện và chính xác trong mọi quyết định.
+                </p>
+
+                <a href="#" class="btn-text">
+                  <span class="span">Tìm hiểu</span>
+
+                  <ion-icon name="arrow-forward-outline" aria-hidden="true"></ion-icon>
+                </a>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+      <!-- 
+        - # HISTORY 
+        
+      -->
+
+      <section class="history" id="history" aria-labelledby="history-label">
+        <div class="container">
+      
+          <p class="section-subtitle" id="history-label" style="font-size: 4rem; text-align: center;">QUÁ TRÌNH LỊCH SỬ VÀ HÌNH THÀNH</p>
+          <div class="history-content">
+            <p>
+              Travel Swift được thành lập vào năm 2024 bởi bà Nguyễn Thị Thùy Trang và ông Cao Đức Thịnh - là chuyên gia trong lĩnh vực quản lý khách sạn, nhà hàng và chăm sóc sức khỏe. Ý tưởng thành lập Travel Swift xuất phát từ nhu cầu ngày càng tăng của khách hàng về một dịch vụ du lịch trọn gói, kết hợp giữa nghỉ dưỡng, ẩm thực và chăm sóc sức khỏe.
+            </p>
+            <p>
+              Với mong muốn tạo ra một không gian thư giãn hoàn hảo, Travel Swift đã nhanh chóng trở thành một trong những thương hiệu được yêu thích nhất trong ngành du lịch. Với tầm nhìn là trở thành người bạn đồng hành đáng tin cậy, mang lại những tiện ích vượt trội trên mỗi chuyến đi của bạn. Sứ mệnh của chúng tôi là luôn cung cấp những giải pháp tiện ích hàng đầu, nâng cao trải nghiệm di chuyển và đồng hành cùng khách hàng trên mọi hành trình.
+            </p>
+          </div>
+      
+        </div>
+      </section>
+
+
+      <!-- 
+        - #ABOUT
+      -->
+
+      <section class="about" id="about_home_page" aria-labelledby="about-label">
+        <div class="container">
+
+          <figure class="about-banner">
+            <img src="./assets/images/about-banner.png" width="800" height="580" loading="lazy" alt="about banner"
+              class="w-100">
+          </figure>
+
+          <div class="about-content">
+
+            <p class="section-subtitle" id="about-label">TẠI SAO CHỌN CHÚNG TÔI??</p>
+
+            <h2 class="h2 section-title">
+              Chúng tôi cung cấp giải pháp giúp cuộc sống của khách hàng trở nên dễ dàng hơn.
+            </h2>
+
+            <ul>
+
+              <li class="about-item">
+                <div class="accordion-card expanded" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Thiết kế chuyên nghiệp</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Chúng tôi mang đến các dịch vụ du lịch, ăn uống, chăm sóc sức khỏe được thiết kế chuyên nghiệp, đảm bảo trải nghiệm hoàn hảo và thoải mái cho bạn.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Hỗ trợ tận tình</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Đội ngũ hỗ trợ của chúng tôi luôn sẵn sàng 24/7, giúp bạn giải đáp mọi thắc mắc và xử lý nhanh chóng mọi yêu cầu.
+                  </p>
+
+                </div>
+              </li>
+
+              <li class="about-item">
+                <div class="accordion-card" data-accordion>
+
+                  <h3 class="card-title">
+                    <button class="accordion-btn" data-accordion-btn>
+                      <ion-icon name="chevron-down-outline" aria-hidden="true" class="down"></ion-icon>
+
+                      <spna class="span h5">Tài nguyên độc quyền</spna>
+                    </button>
+                  </h3>
+
+                  <p class="accordion-content">
+                    Chúng tôi cung cấp các tài nguyên độc quyền, giúp bạn có được thông tin và dịch vụ tốt nhất cho chuyến du lịch của mình.
+                  </p>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #FEATURE
+      -->
+
+      <section class="section feature" aria-labelledby="feature-label">
+        <div class="container">
+
+          <figure class="feature-banner">
+            <img src="./assets/images/feature-banner.png" width="800" height="531" loading="lazy" alt="feature banner"
+              class="w-100">
+          </figure>
+
+          <div class="feature-content">
+
+            <p class="section-subtitle" id="feautre-label">GIẢI PHÁP CỦA CHÚNG TÔI</p>
+
+            <h2 class="h2 section-title">
+              Giải Pháp Du Lịch Toàn Diện và Tiết Kiệm Chi Phí, Thời Gian.
+            </h2>
+
+            <p class="section-text">
+              Chúng tôi giúp việc lên kế hoạch du lịch trở nên đơn giản và thoải mái, mang lại sự kiểm soát tối đa. Từ đặt vé, khách sạn đến lịch trình tham quan, mọi thứ đều được tối ưu để tiết kiệm thời gian và chi phí.
+            </p>
+
+            <ul class="feature-list">
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Dịch vụ toàn diện
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Đặt phòng và vé linh hoạt
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Hỗ trợ tận tình
+                  </span>
+
+                </div>
+              </li>
+
+              <li>
+                <div class="feature-card">
+
+                  <div class="card-icon">
+                    <ion-icon name="checkmark" aria-hidden="true"></ion-icon>
+                  </div>
+
+                  <span class="span">
+                    Thông tin cập nhật liên tục
+                  </span>
+
+                </div>
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #STATS
+      -->
+
+      <section class="stats" aria-label="our stats">
+        <div class="container">
+
+          <ul class="stats-card has-bg-image" style="background-image: url('./assets/images/stats-bg.jpg')">
+
+            <li>
+              <p class="card-text">
+                <span class="h1">100+</span>
+
+                <spna class="span">Chuyến đi sắp ra mắt</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">0+</span>
+
+                <spna class="span">Khách hàng tương lai</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">5+</span>
+
+                <spna class="span">Giải thưởng và mục tiêu</spna>
+              </p>
+            </li>
+
+            <li>
+              <p class="card-text">
+                <span class="h1">10+</span>
+
+                <spna class="span">Nhân viên giàu kinh nghiệm</spna>
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #PROJECT
+      -->
+
+      <section class="section project" aria-labelledby="project-label">
+        <div class="container">
+
+          <p class="section-subtitle" id="project-label">DỰ ÁN TIÊU BIỂU</p>
+
+          <h2 class="h2 section-title">
+            Khám phá một số dự án ấn tượng của chúng tôi với ý tưởng sáng tạo và thiết kế tuyệt vời.
+          </h2>
+
+          <ul class="grid-list">
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-1.jpg" width="560" height="350" loading="lazy"
+                    alt="Ligula tristique quis risus" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Khách sạn cao cấp</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Khách sạn sang trọng với dịch vụ đẳng cấp, mang đến trải nghiệm nghỉ dưỡng hoàn hảo cho du khách.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-04-14">14-03-2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Khách sạn</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-2.jpg" width="560" height="350" loading="lazy"
+                    alt="Nullam id dolor elit id nibh" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Nhà hàng ẩm thực quốc tế</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Thưởng thức các món ăn đặc sắc từ khắp nơi trên thế giới trong không gian ấm cúng và tinh tế.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-03-29">20-05-2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Nhà hàng</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Trải nghiệm Spa thư giãn</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Dịch vụ Spa cao cấp giúp bạn thư giãn hoàn toàn và tái tạo năng lượng trong suốt chuyến đi.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26-08-2023</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Sức khoẻ</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Bảo hiểm du lịch toàn diện</a>
+                  </h3>
+
+                  <p class="card-text">
+                    An tâm với gói bảo hiểm du lịch toàn diện, bảo vệ bạn và tài sản của bạn trong mọi tình huống không mong muốn.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26-08-2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Bảo hiểm</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Chăm sóc sức khỏe 24/7</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Dịch vụ chăm sóc sức khỏe chuyên nghiệp, luôn sẵn sàng hỗ trợ 24/7 cho du khách với các thiết bị mà máy móc chuyên nghiệp.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">28-08-2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Sức khoẻ</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+            <li>
+              <div class="project-card">
+
+                <figure class="card-banner img-holder" style="--width: 560; --height: 350;">
+                  <img src="./assets/images/blog-3.jpg" width="560" height="350" loading="lazy"
+                    alt="Ultricies fusce porta elit" class="img-cover">
+                </figure>
+
+                <div class="card-content">
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Nhà hàng đặc sản địa phương</a>
+                  </h3>
+
+                  <p class="card-text">
+                    Khám phá hương vị đặc trưng của địa phương với những món ăn ngon miệng và hấp dẫn.
+                  </p>
+
+                  <ul class="card-meta-list">
+
+                    <li class="card-meta-item">
+                      <ion-icon name="calendar-outline" aria-hidden="true"></ion-icon>
+
+                      <time class="meta-text" datetime="2022-02-26">26-07-2024</time>
+                    </li>
+
+                    <li class="card-meta-item">
+                      <ion-icon name="document-text-outline" aria-hidden="true"></ion-icon>
+
+                      <span class="meta-text">Nhà hàng</span>
+                    </li>
+
+                  </ul>
+
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </div>
+      </section>
+
+
+
+
+
+      <!-- 
+        - #CTA
+      -->
+
+      <section class="cta" aria-label="call to action">
+        <div class="container">
+
+          <h2 class="h2 section-title">
+            Chuyến đi của bạn, cam kết chất lượng của chúng tôi.
+          </h2>
+
+          <a href="#" class="btn btn-primary">Trải nghiệm dịch vụ miễn phí!</a>
+
+        </div>
+      </section>
+
+    </article>
+  </main>
+
+
+
+
+
+  <!-- 
+    - #FOOTER
+  -->
+
+  <footer class="footer">
+    <div class="container grid-list">
+
+      <div class="footer-brand">
+
+      <a href="#" class="logo" style="display: inline-block; width: 74px; height: 24px; line-height: 24px; text-align: center;">
+        <span style="color: white; display: inline-block; width: 150px; font-family: 'Manrope', sans-serif; font-weight: 500; font-size: 2rem; text-align: left;">Travel Swift</span>
+      </a>
+
+        <p class="footer-text">
+          &copy; 2024 Travel Swift. <br> Thông tin liên lạc.
+        </p>
+
+        <ul class="social-list">
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+          <li>
+            <a href="#" class="social-link">
+              <ion-icon name="logo-youtube"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Địa chỉ</p>
+        </li>
+
+        <li>
+          <address class="footer-text">
+            123, Đường ABC, Phường XYZ, Quận 123, TP. HCM
+          </address>
+        </li>
+
+        <li>
+          <a href="mailto:info@email.com" class="footer-link">info@email.com</a>
+        </li>
+
+        <li>
+          <a href="tel:001234567890" class="footer-link">0123456789</a>
+        </li>
+
+      </ul>
+
+      <ul class="footer-list">
+
+        <li>
+          <p class="h4 footer-list-title">Tìm hiểu thêm</p>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">About Us</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Câu chuyện của chúng tôi</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Dự án</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Điều khoản sử dụng</a>
+        </li>
+
+        <li>
+          <a href="#" class="footer-link">Chính sách bảo mật</a>
+        </li>
+
+      </ul>
+
+      <div class="footer-list">
+
+        <p class="h4 footer-list-title">Cập nhật thông tin từ chúng tôi</p>
+
+        <p class="footer-text">
+          Đăng ký nhận bản tin của chúng tôi để nhận thông tin và ưu đãi mới nhất.
+        </p>
+
+        <form action="" class="input-wrapper">
+          <input type="email" name="email_address" placeholder="Địa chỉ Mail" required class="input-field">
+
+          <button type="submit" class="submit-btn">Đăng ký</button>
+        </form>
+
+      </div>
+
+    </div>
+  </footer>
+
+
+
+
+
+  <!-- 
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!-- 
+    - ionicon
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
