@@ -8,7 +8,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
-    <title>Travel Swift | Booking Hotel</title>
+    <title>Travel Swift | Tour & Plane</title>
   </head>
   <body>
     <header class="header">
@@ -26,16 +26,16 @@
         </div>
         <ul class="nav__links" id="nav-links">
           <li><a href="#home">Trang chủ</a></li>
-          <li><a href="#about">Thông tin</a></li>
-          <li><a href="#service">Dịch vụ</a></li>
+          <li><a href="#about">Tour du lịch</a></li>
+          <li><a href="#service">Vé máy bay</a></li>
           <li><a href="#explore">Khám phá</a></li>
           <li><a href="#contact">Liên lạc</a></li>
         </ul>
-        <button class="btn nav__btn" onclick="window.location.href='../payment/payment.html'">Đặt phòng</button>
+        <button class="btn nav__btn" onclick="window.location.href='../payment/payment.html'">Đặt Tour</button>
       </nav>
       <div class="section__container header__container" id="home">
-        <p>Gọn gàng - Độc đáo - Gần gũi</p>
-        <h1>Cảm Giác Như Ở Nhà<br />Trong không gian của chúng tôi <span></span>.</h1>
+        <p>Khám Phá - Trải Nghiệm - Thư Giãn</p>
+        <h1>Trải Nghiệm Du Lịch Đáng Nhớ<br />Cùng các tour đặc sắc của chúng tôi <span></span>.</h1>
       </div>
     </header>
 
@@ -44,26 +44,26 @@
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
-            <label for="check-in">CHECK-IN</label>
-            <input type="text" placeholder="Check In" />
+            <label for="departure-date">Ngày đi</label>
+            <input type="text" placeholder="Ngày đi" />
           </div>
         </div>
         <div class="input__group">
           <span><i class="ri-calendar-2-fill"></i></span>
           <div>
-            <label for="check-out">CHECK-OUT</label>
-            <input type="text" placeholder="Check Out" />
+            <label for="return-date">Ngày về</label>
+            <input type="text" placeholder="Ngày về" />
           </div>
         </div>
         <div class="input__group">
           <span><i class="ri-user-fill"></i></span>
           <div>
-            <label for="guest">Khách</label>
-            <input type="text" placeholder="Guest" />
+            <label for="tour-guests">Số lượng khách đi tour</label>
+            <input type="text" placeholder="Số lượng khách đi tour" />
           </div>
         </div>
         <div class="input__group input__btn">
-          <button class="btn" onclick="window.location.href='payment.html'">CHECH OUT</button>
+          <button class="btn" onclick="window.location.href='payment.html'">ĐẶT TOUR</button>
         </div>
       </form>
     </section>
@@ -73,24 +73,25 @@
         <img src="assets/about.jpg" alt="about" />
       </div>
       <div class="about__content">
-        <p class="section__subheader">ABOUT US</p>
-        <h2 class="section__header">Bắt đầu kỳ nghỉ tuyệt vời tại đây!</h2>
+        <p class="section__subheader">Dịch vụ của chúng tôi</p>
+        <h2 class="section__header">Bắt đầu hành trình hoàn hảo ngay hôm nay!</h2>
         <p class="section__description">
-          Với trọng tâm là chất lượng chỗ ở, trải nghiệm cá nhân hóa và đặt phòng liền mạch, nền tảng của chúng tôi cam kết đảm bảo rằng mỗi du khách đều bắt đầu kỳ nghỉ mơ ước của mình với sự tự tin và hào hứng.
+          Chúng tôi cung cấp dịch vụ đặt tour du lịch và vé máy bay nhanh chóng, tiện lợi. Dù là chuyến du lịch trong nước hay quốc tế, chúng tôi cam kết mang đến cho bạn trải nghiệm tốt nhất với quy trình đặt chỗ liền mạch.
         </p>
         <div class="about__btn">
-          <button class="btn">Thêm</button>
+          <button class="btn" onclick="window.location.href='tour-flight-booking.html'">Tìm hiểu thêm</button>
         </div>
       </div>
     </section>
 
     <section class="section__container room__container">
-      <p class="section__subheader">Các loại phòng</p>
-      <h2 class="section__header">Khoảng thời gian nghỉ ngơi đáng nhớ nhất bắt đầu từ đây.</h2>
+      <p class="section__subheader">Các hạng vé tại Travel Swift</p>
+      <h2 class="section__header">Tư vấn hành trình bay</h2>
       <div class="room__grid">
+        
         <div class="room__card">
           <div class="room__card__image">
-            <img src="assets/don.png" alt="room" />
+            <img src="assets/economy.png" alt="economy-class" /> <!-- Đây là nơi để gắn địa chỉ hình ảnh cho Hạng ghế phổ thông -->
             <div class="room__card__icons">
               <span><i class="ri-heart-fill"></i></span>
               <span><i class="ri-paint-fill"></i></span>
@@ -98,17 +99,18 @@
             </div>
           </div>
           <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
-            <h4>Phòng đơn tiện nghi</h4>
+            <h4>Hạng ghế phổ thông</h4>
             <p style="height: 100px;">
-              Phòng đơn và giường đôi hiện đại, tiện nghi cao cấp, dịch vụ dọn phòng, bữa sáng, ưu đãi tiện ích, giá linh hoạt, sang trọng và thoải mái.
+              Hạng ghế phổ thông mang đến sự thoải mái, tiện nghi cơ bản, phù hợp cho những hành trình ngắn và giá cả phải chăng.
             </p>
-            <h5>Giá từ <span>1.290.000 VND/đêm</span></h5>
-            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt phòng</button>
+            <h5>Giá từ <span>3.000.000 VNĐ.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Vé</button>
           </div>
         </div>
+        
         <div class="room__card">
           <div class="room__card__image">
-            <img src="assets/doi.png" alt="room" />
+            <img src="assets/business.png" alt="business-class" />
             <div class="room__card__icons">
               <span><i class="ri-heart-fill"></i></span>
               <span><i class="ri-paint-fill"></i></span>
@@ -116,17 +118,18 @@
             </div>
           </div>
           <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
-            <h4>Phòng đôi sang trọng</h4>
+            <h4>Hạng vé thương gia</h4>
             <p style="height: 100px;">
-              Phòng đơn và giường đôi hiện đại, tiện nghi cao cấp, dịch vụ dọn phòng, bữa sáng, ưu đãi tiện ích, giá linh hoạt, sang trọng và thoải mái.
+              Hạng thương gia cung cấp không gian rộng rãi, dịch vụ cao cấp và tiện nghi sang trọng cho hành khách trên những chuyến bay dài.
             </p>
-            <h5>Giá từ <span>2.190.000 VND/đêm</span></h5>
-            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt phòng</button>
+            <h5>Giá từ <span>8.000.000 VNĐ.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Vé</button>
           </div>
         </div>
+    
         <div class="room__card">
           <div class="room__card__image">
-            <img src="assets/viewdep.png" alt="room" />
+            <img src="assets/flex.png" alt="flex-class" /> <!-- Đây là nơi để gắn địa chỉ hình ảnh cho Hạng phổ thông linh hoạt -->
             <div class="room__card__icons">
               <span><i class="ri-heart-fill"></i></span>
               <span><i class="ri-paint-fill"></i></span>
@@ -134,93 +137,182 @@
             </div>
           </div>
           <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
-            <h4>Phòng view đẹp</h4>
+            <h4>Hạng phổ thông linh hoạt</h4>
             <p style="height: 100px;">
-              Chiêm ngưỡng khung cảnh tuyệt đẹp từ phòng với tầm nhìn lý tưởng, đem lại trải nghiệm khó quên.
+              Hạng phổ thông linh hoạt cung cấp các điều kiện thay đổi vé thuận lợi hơn, cùng với sự thoải mái cho hành khách.
             </p>
-            <h5>Giá từ <span>2.890.000 VND/đêm</span></h5>
-            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt phòng</button>
+            <h5>Giá từ <span>5.500.000 VNĐ.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Vé</button>
           </div>
         </div>
+        
       </div>
+    </section>
 
+    <section class="section__container room__container">
+      <p class="section__subheader">Các loại Tour ngoài nước</p>
+      <h2 class="section__header">Tour du lịch Pháp.</h2>
       <div class="room__grid">
         <div class="room__card">
           <div class="room__card__image">
-            <img src="assets/depdalat.png" alt="room" />
-            <div class="room__card__icons">
+            <img src="assets/phap.jpg" alt="room" width="300" height="245"/>
+            <div class="room__card__icons"> 
               <span><i class="ri-heart-fill"></i></span>
               <span><i class="ri-paint-fill"></i></span>
               <span><i class="ri-shield-star-line"></i></span>
             </div>
           </div>
-          <div class="room__card__details">
-            <h4 style="height: 90px;">Phòng view nghỉ dưỡng trên núi + hợp tác với các đối tác du lịch Đà Lạt, Kon Tum</h4>
+          <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4>Tiêu chuẩn - 5 ngày 4 đêm</h4>
             <p style="height: 100px;">
-              Thoát khỏi ồn ào và tận hưởng khung cảnh núi non yên bình cùng không khí trong lành.
+              Khám phá Paris với những biểu tượng nổi tiếng như Tháp Eiffel, Nhà thờ Đức Bà, Mont Saint Michel, làng Giverny, kết hợp trải nghiệm mua sắm tại Champs-Élysées và ẩm thực tinh tế của Pháp.
             </p>
-            <h5>Giá từ <span>2.500.000 VND/đêm</span></h5>
-            <button class="btn" onclick="window.location.href='../payment/payment.html'">Đặt phòng</button>
+            <h5>Giá từ <span>60.000.000/khách.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Tour</button>
           </div>
         </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/biennhatrang.png" alt="room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div class="room__card__details">
-            <h4 style="height: 90px;">Phòng view biển + hợp tác với các đối tác du lịch Nha Trang, Đà Nẵng</h4>
-            <p>
-              Phòng view biển sang trọng, tiện nghi cao cấp, bữa sáng, dịch vụ đưa đón, ưu đãi tiện ích, lý tưởng cho kỳ nghỉ thư giãn và phong cách.
-            </p>
-            <h5>Giá từ <span>3.000.000 VND/đêm</span></h5>
-            <button class="btn" onclick="window.location.href='../payment/payment.html'">Đặt phòng</button>
-          </div>
-        </div>
-        <div class="room__card">
-          <div class="room__card__image">
-            <img src="assets/room-3.jpg" alt="room" />
-            <div class="room__card__icons">
-              <span><i class="ri-heart-fill"></i></span>
-              <span><i class="ri-paint-fill"></i></span>
-              <span><i class="ri-shield-star-line"></i></span>
-            </div>
-          </div>
-          <div class="room__card__details">
-            <h4 style="height: 90px;">Phòng view biển</h4>
-            <p>
-              Phòng view biển sang trọng, tiện nghi cao cấp, bữa sáng, dịch vụ đưa đón, ưu đãi tiện ích, lý tưởng cho kỳ nghỉ thư giãn và phong cách.
-            </p>
-            <h5>Giá từ <span>9.390.000 VND/đêm</span></h5>
-            <button class="btn" onclick="window.location.href='../payment/payment.html'">Đặt phòng</button>
-          </div>
-        </div>
-      </div>
+    </section>
 
+    <section class="section__container room__container">
+      <p class="section__subheader">Các loại Tour trong nước</p>
+      <h2 class="section__header">Các Tour Miền Bắc Hà Nội.</h2>
       <div class="room__grid">
         <div class="room__card">
           <div class="room__card__image">
-            <img src="assets/room-2.jpg" alt="room" />
+            <img src="assets/hanoi1.jpg" alt="room" width="300" height="245"/>
+            <div class="room__card__icons"> 
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4>Tiêu chuẩn - 3 ngày 2 đêm</h4>
+            <p style="height: 100px;">
+              Dành cho những người muốn khám phá thành phố trong khoảng thời gian ngắn, bao gồm các điểm nổi bật của thành phố.
+            </p>
+            <h5>Giá từ <span>4.000.000/khách.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Tour</button>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/hanoi2.jpg" alt="room" width="300" height="245"/>
             <div class="room__card__icons">
               <span><i class="ri-heart-fill"></i></span>
               <span><i class="ri-paint-fill"></i></span>
               <span><i class="ri-shield-star-line"></i></span>
             </div>
           </div>
-          <div class="room__card__details">
-            <h4 style="height: 90px;">Phòng Suite ngắm toàn cảnh thành phố</h4>
+          <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4>Cao cấp - 4 ngày 3 đêm</h4>
             <p style="height: 100px;">
-              Hòa mình vào nhịp sống sôi động với tầm nhìn bao quát khung trời thành phố từ căn suite hiện đại.
+              Tham gia vào một chuyến tham quan kéo dài cả ngày, cung cấp trải nghiệm đầy đủ với nhiều hoạt động và điểm tham quan đa dạng.
             </p>
-            <h5>Giá từ <span>3.300.000 VND/đêm</span></h5>
-            <button class="btn" onclick="window.location.href='../payment/payment.html'">Đặt phòng</button>
+            <h5>Giá từ <span>7.500.000/khách.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Tour</button>
           </div>
         </div>
       </div>
+      <h2 class="section__header" style="margin-top: 20px;">Các Tour Sapa.</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/sapa1.png" alt="room"width="300" height="245"/>
+            <div class="room__card__icons"> 
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4>Tiêu chuẩn - 3 ngày 2 đêm</h4>
+            <p style="height: 100px;">
+              Hành trình khám phá núi rừng Tây Bắc, trải nghiệm văn hóa bản địa qua leo núi, tham quan bản làng và thưởng thức ẩm thực địa phương.
+            </p>
+            <h5>Giá từ <span>5.000.000/khách.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Tour</button>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/sapa1.png" alt="room" width="300" height="245"/>
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4>Cao cấp - 4 ngày 3 đêm</h4>
+            <p style="height: 100px;">
+              Trải nghiệm sâu sắc thiên nhiên hùng vĩ của Sapa, tham gia vào các hoạt động văn hóa đặc sắc và tận hưởng không gian yên bình nơi núi rừng.
+            </p>
+            <h5>Giá từ <span>9.000.000/khách.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Tour</button>
+          </div>
+        </div>
+
+      </div>
+      <h2 class="section__header" style="margin-top: 20px;" >Các Tour Đà Nẵng.</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/danang1.png" alt="room" width="300" height="245"/>
+            <div class="room__card__icons"> 
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4>Tiêu chuẩn - 3 ngày 2 đêm</h4>
+            <p style="height: 100px;">
+              Trải nghiệm văn hóa và thiên nhiên Đà Nẵng, khám phá bãi biển Mỹ Khê và các cây cầu biểu tượng, mang lại kỷ niệm khó quên.
+            </p>
+            <h5>Giá từ <span>5.900.000/khách.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Tour</button>
+          </div>
+        </div>
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/danang1.png" alt="room" width="300" height="245"/>
+            <div class="room__card__icons">
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4>Cao cấp - 4 ngày 3 đêm</h4>
+            <p style="height: 100px;">
+              Hành trình khám phá sâu hơn Đà Nẵng, kết nối các địa danh nổi tiếng và thưởng thức ẩm thực miền Trung, tạo nên sự hài lòng cho du khách.
+            </p>
+            <h5>Giá từ <span>6.500.000/khách.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Tour</button>
+          </div>
+        </div>
+      </div>
+      <h2 class="section__header" style="margin-top: 20px;">Tour du lịch Tâm linh Tây Ninh .</h2>
+      <div class="room__grid">
+        <div class="room__card">
+          <div class="room__card__image">
+            <img src="assets/tayninh.png" alt="room" width="300" height="245"/>
+            <div class="room__card__icons"> 
+              <span><i class="ri-heart-fill"></i></span>
+              <span><i class="ri-paint-fill"></i></span>
+              <span><i class="ri-shield-star-line"></i></span>
+            </div>
+          </div>
+          <div class="room__card__details" style="height: 322px; display: flex; flex-direction: column; justify-content: space-between;">
+            <h4>Tour Tây Ninh trong ngày</h4>
+            <p style="height: 100px;">
+              Khám phá Nam Bộ đưa du khách chiêm ngưỡng Núi Bà Đen hùng vĩ và khám phá kiến trúc độc đáo, ấn tượng của Tòa Thánh Cao Đài, di sản văn hóa đặc sắc.
+            </p>
+            <h5>Giá từ <span>900.000/khách.</span></h5>
+            <button class="btn" onclick="window.location.href='../payment/payment.html'" style="width: 126px;">Đặt Tour</button>
+          </div>
+        </div>
     </section>
 
     <section class="service" id="service">
@@ -235,7 +327,7 @@
             </li>
             <li>
               <span><i class="ri-24-hours-line"></i></span>
-              Dịch vụ phòng 24/7
+              Dịch vụ Tour 24/7
             </li>
             <li>
               <span><i class="ri-headphone-line"></i></span>
@@ -253,12 +345,12 @@
     <section class="section__container banner__container">
       <div class="banner__content">
         <div class="banner__card">
-          <h4>25+</h4>
-          <p>Dịch vụ sẵn có</p>
+          <h4>8+</h4>
+          <p>Tour sẵn có</p>
         </div>
         <div class="banner__card">
           <h4>0+</h4>
-          <p>Đơn đặt phòng đã hoàn tất</p>
+          <p>Đơn đặt Tour đã hoàn tất</p>
         </div>
         <div class="banner__card">
           <h4>0+</h4>
@@ -288,7 +380,7 @@
           <p class="section__description">
             Khám phá thế giới tiện nghi, sang trọng và phiêu lưu khi bạn trải nghiệm danh sách khách sạn được chọn lọc của chúng tôi, biến mọi khoảnh khắc trong kỳ nghỉ của bạn trở nên thật đặc biệt.
           </p>
-          <button class="btn" onclick="window.location.href='../payment/payment.html'">Đặt phòng</button>
+          <button class="btn" onclick="window.location.href='../payment/payment.html'">Đặt Tour</button>
         </div>
         <div class="footer__col">
           <h4>Địa chỉ</h4>
